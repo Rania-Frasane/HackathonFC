@@ -19,65 +19,65 @@ export const router = createBrowserRouter([
   {
     path: "/",
     children: [
-        {
-          path: "/Login",
-          element: <Authentication/>,
-          // children: [{ index: true, element: <Dashboard /> }],
-        },
-        {
-            path: "/SignUP",
-            element: <Signup/>,
-            // children: [{ index: true, element: <Dashboard /> }],
-          },
-          {
-            path: "/SignUPp",
-            element: <Signupp/>,
-            // children: [{ index: true, element: <Dashboard /> }],
-          },
-            {
-            path: "/Dashboard",
-            element: <Layout />,
-            children: [{ index: true, element: <DashboardPage /> }],
-            },
-            {
-                path: "/Intervenants",
-                element: <Layout />,
-                children: [{ index: true, element: <Films /> }],
-                },
-            {
-                path: "/Competences",
-                element: <Layout />,
-                children: [{ index: true, element: <Competences /> }],
-            },
-            {
-                path: "/certifications",
-                element: <Layout />,
-                children: [{ index: true, element: <Certifications /> }],
-                },
-            {
-                path: "/plans",
-                element: <Layout />,
-                children: [{ index: true, element: <Plans /> }],
-                },
-            {
-                path: "/plans",
-                element: <Layout />,
-                children: [{ index: true, element: <Plans /> }],
-                },
-            {
-                path: "/Reclamations",
-                element: <Layout />,
-                children: [{ index: true, element: <Reclamations /> }],
-                },
-            {
-                path: "/Profile",
-                element: <Layout />,
-                children: [{ index: true, element: <DashboardProfile/> }],
-                },
-            {
-                path: "/NavBar",
-                element: <Component />,
-                },
+      {
+        path: "/Login",
+        element: <Authentication />,
+        // children: [{ index: true, element: <Dashboard /> }],
+      },
+      {
+        path: "/SignUP",
+        element: <Signup />,
+        // children: [{ index: true, element: <Dashboard /> }],
+      },
+      {
+        path: "/SignUPp",
+        element: <Signupp />,
+        // children: [{ index: true, element: <Dashboard /> }],
+      },
+      {
+        path: "/Dashboard",
+        element: <Layout />,
+        children: [{ index: true, element: <DashboardPage /> }],
+      },
+      {
+        path: "/Intervenants",
+        element: <Layout />,
+        children: [{ index: true, element: <Films /> }],
+      },
+      {
+        path: "/Competences",
+        element: <Layout />,
+        children: [{ index: true, element: <Competences /> }],
+      },
+      {
+        path: "/certifications",
+        element: <Layout />,
+        children: [{ index: true, element: <Certifications /> }],
+      },
+      {
+        path: "/plans",
+        element: <Layout />,
+        children: [{ index: true, element: <Plans /> }],
+      },
+      {
+        path: "/plans",
+        element: <Layout />,
+        children: [{ index: true, element: <Plans /> }],
+      },
+      {
+        path: "/Reclamations",
+        element: <Layout />,
+        children: [{ index: true, element: <Reclamations /> }],
+      },
+      {
+        path: "/Profile",
+        element: <Layout />,
+        children: [{ index: true, element: <DashboardProfile /> }],
+      },
+      {
+        path: "/NavBar",
+        element: <Component />,
+      },
 
 
     ],
@@ -86,10 +86,10 @@ export const router = createBrowserRouter([
     path: "/client",
     element: <MainLayout />, // Apply MainLayout to the client-specific routes
     children: [
-        {
-            path: "/client",
-            element: <Header />,
-          },
+      {
+        path: "/client",
+        element: <Header />,
+      },
       {
         path: "services",
         element: <Services />,
@@ -98,10 +98,10 @@ export const router = createBrowserRouter([
         path: "formation",
         element: <Formation />,
       },
-    //   {
-    //     path: "Services/:id", // Dynamic route for service details
-    //     element: <ServiceDetail />,
-    //   },
+      //   {
+      //     path: "Services/:id", // Dynamic route for service details
+      //     element: <ServiceDetail />,
+      //   },
     ],
   },
 ]);

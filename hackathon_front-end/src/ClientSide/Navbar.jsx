@@ -203,17 +203,18 @@ function UserIcon(props) {
 }
 
 function Component() {
-//   const { auth, logout } = useAuth();
+  //   const { auth, logout } = useAuth();
   return (
     <header className="flex items-center justify-between px-4 py-3 bg-white shadow-sm dark:bg-gray-950 md:px-6 lg:px-8">
       <div className="flex items-center">
         <a className="flex items-center gap-2 text-lg font-bold text-gray-900 dark:text-gray-50" href="#">
-          <MountainIcon className="w-6 h-6" />
+          {/* <MountainIcon className="w-6 h-6" /> */}
+          <img src="./../../public/photos/logoOfppt.png" className='w-10 h-10 object-contain' alt=""  />
           <span className="sr-only">Blog App</span>
         </a>
       </div>
       <nav className="hidden items-center gap-4 text-sm font-medium md:flex">
-      <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" to="./">
+        <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" to="./">
           Home
         </Link>
         <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" to="./services">
@@ -226,41 +227,38 @@ function Component() {
       </nav>
 
       <div className="flex items-center gap-4">
-      <a href="/SignIN">
-            <Button>Login & Register</Button>
-          </a>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Avatar className="h-9 w-9">
-                <AvatarImage alt="User Avatar" src="/placeholder-avatar.jpg" />
-                <AvatarFallback>JD</AvatarFallback>
-              </Avatar>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56">
-              <DropdownMenuItem>
-                <a className="flex items-center gap-2" href="#">
-                  <UserIcon className="w-4 h-4" />
-                  Profile
-                </a>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <a className="flex items-center gap-2" href="#">
-                  <SettingsIcon className="w-4 h-4" />
-                  Settings
-                </a>
-              </DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>
-                <a className="flex items-center gap-2" href="SignIN" onClick={() => logout()}>
-                  <LogOutIcon className="w-4 h-4" />
-                  Logout
-                </a>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-
-
-
+        <a href="/SignIN">
+          <Button>Login & Register</Button>
+        </a>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Avatar className="h-9 w-9">
+              <AvatarImage alt="User Avatar" src="/placeholder-avatar.jpg" />
+              <AvatarFallback>JD</AvatarFallback>
+            </Avatar>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="w-56">
+            <DropdownMenuItem>
+              <a className="flex items-center gap-2" href="#">
+                <UserIcon className="w-4 h-4" />
+                Profile
+              </a>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <a className="flex items-center gap-2" href="#">
+                <SettingsIcon className="w-4 h-4" />
+                Settings
+              </a>
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>
+              <a className="flex items-center gap-2" href="SignIN" onClick={() => logout()}>
+                <LogOutIcon className="w-4 h-4" />
+                Logout
+              </a>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
       <Sheet>
         <SheetTrigger asChild>
@@ -276,15 +274,15 @@ function Component() {
               <span className="sr-only">Blog App</span>
             </a>
             <nav className="grid gap-2">
-            <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" to="./">
-          Home
-        </Link>
-        <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" to="./services">
-          Services
-        </Link>
-        <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" to="./formation">
-          Formations
-        </Link>
+              <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" to="./">
+                Home
+              </Link>
+              <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" to="./services">
+                Services
+              </Link>
+              <Link className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" to="./formation">
+                Formations
+              </Link>
             </nav>
           </div>
         </SheetContent>

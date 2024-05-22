@@ -45,13 +45,13 @@ export default function Authentication() {
     }
     return isValid;
   };
- 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateInput()) return;
 
     try {
-        console.log(email,password);
+      console.log(email, password);
       const response = await axios.post('http://localhost:8000/api/login', { email, password });
 
       navigate('/dashboard');
